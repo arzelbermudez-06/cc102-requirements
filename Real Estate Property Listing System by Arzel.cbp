@@ -1,38 +1,92 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="final requirements" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/final requirements" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/final requirements" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-			<Add option="-fexceptions" />
-		</Compiler>
-		<Unit filename="main.cpp" />
-		<Extensions />
-	</Project>
-</CodeBlocks_project_file>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "HELLO, GOOD DAY MA'AM/SIR" << endl;
+    cout << "WELCOME TO RENTING AND SELLING PROPERTY" << endl;
+
+    cout << endl;
+
+    cout << "What is your intention? Buy property or Rent?";
+
+    cout << endl;
+
+    string answer;
+
+    do {
+        cout << "Type Buy or Rent to proceed:";
+        cin >> answer;
+    }
+
+    while ( answer != "Rent" && answer != "Buy" );
+    cout << "Okay let's proceed";
+    cout << endl << endl;
+
+    if (answer == "Rent") {
+        cout << "These are the available properties for renting:" << endl << endl;
+        cout << "Emerald Valley Terrace Home" << endl;
+        cout << "Price    : $1,450 annually" << endl;
+        cout << "Location : Zurich, Switzerland" << endl;
+        cout << "Bedrooms : 4" << endl;
+        cout << "Bathrooms: 3" << endl;
+        cout << endl;
+        cout << "Mapplewood Garden House" << endl;
+        cout << "Price    : $1,600 annually" << endl;
+        cout << "Location : Vienna, Austria" << endl;
+        cout << "Bedrooms : 5" << endl;
+        cout << "Bathrooms: 4" << endl;
+        cout << endl;
+        cout << "Silver Creek Villa" << endl;
+        cout << "Price    : $1,380 annually" << endl;
+        cout << "Location : Bordeaux, France" << endl;
+        cout << "Bedrooms : 4" << endl;
+        cout << "Bathrooms: 3" << endl;
+        cout << endl;
+        cout << "Hillcrest Modern Home" << endl;
+        cout << "Price    : $1,500 annually" << endl;
+        cout << "Location : Florence, Italy" << endl;
+        cout << "Bedrooms : 4" << endl;
+        cout << "Bathrooms: 3" << endl;
+        cout << endl;
+        cout << "Sakura Lane Residence" << endl;
+        cout << "Price    : $1,780 annually" << endl;
+        cout << "Location : Copenhogen, Denmark" << endl;
+        cout << "Bedrooms : 5" << endl;
+        cout << "Bathrooms: 4" << endl;
+    } else {
+        cout << "These are the available for sale properties:" << endl << endl;
+        cout << "Modern Luxury Villa" << endl;
+        cout << "Price    : $850,000" << endl;
+        cout << "Location : Los Angeles, USA" << endl;
+        cout << "Bedrooms : 5" << endl;
+        cout << "Bathrooms: 4" << endl;
+        cout << endl;
+        cout << "Beachfront Mansion" << endl;
+        cout << "Price    : $1,500,000" << endl;
+        cout << "Location : Miami, USA" << endl;
+        cout << "Bedrooms : 6" << endl;
+        cout << "Bathrooms: 5" << endl;
+        cout << endl;
+        cout << "Luxury Beach House" << endl;
+        cout << "Price    : $1,100,000" << endl;
+        cout << "Location : Nice, France" << endl;
+        cout << "Bedrooms : 5" << endl;
+        cout << "Bathrooms: 4" << endl;
+        cout << endl;
+        cout << "Minimalist House" << endl;
+        cout << "Price    : $410,000" << endl;
+        cout << "Location : Sydney, Australia" << endl;
+        cout << "Bedrooms : 3" << endl;
+        cout << "Bathrooms: 2" << endl;
+        cout << endl;
+        cout << "Traditional Luxury House" << endl;
+        cout << "Price    : $720,000" << endl;
+        cout << "Location : Kyoto, Japan" << endl;
+        cout << "Bedrooms : 4" << endl;
+        cout << "Bathrooms: 3" << endl;
+    }
+
+    return 0;
+}
